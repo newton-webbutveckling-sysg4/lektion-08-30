@@ -38,7 +38,8 @@ const users = [
 const onlineUsers = users.map(user => user.firstName)
 console.log('Online users: ', onlineUsers);
 
-
+// Map och filter i samma andetag!
+const hotmailAddresses = users.map(user => user.email).filter(email => email.endsWith('hotmail.com'))
 
 
 

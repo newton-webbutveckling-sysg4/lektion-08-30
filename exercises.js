@@ -54,8 +54,12 @@ const bConverted = listB.map(b => b + '')
 // const bConverted = listB.map(b => String(b)  )
 console.log('bConverted:', bConverted);
 
+// Använd filter för att skapa en lista som innehåller alla element i listB som har datatypen String eller Number.
+const stringsAndNumbers = listB.filter(
+	b => (typeof b) === 'string' || (typeof b) === 'number')
+console.log('Strings and numbers:', stringsAndNumbers);
+
 /*
-Använd filter för att skapa en lista som innehåller alla element i listB som har datatypen String eller Number.
 
 Använd find för att hitta första elementet i listA som är större än 20.
 
